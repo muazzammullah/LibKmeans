@@ -1,4 +1,5 @@
 from libkmeans import *
 
-data=read_data("abalone.data")
-kmeans(calculate_centroids(3,data),data)
+data=read_data("whateverdatafile.data")
+k=3
+kmeans(calculate_centroids(k,data),data)
