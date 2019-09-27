@@ -70,7 +70,7 @@ def kmeans(centroids,data):
 			plt.plot(centroid_x,centroid_y,centroid_color_plot)
 			centroid_cluster_points_x=[datapoint[0] for datapoint in data if datapoint[2]==centroid_color_name]
 			centroid_cluster_points_y=[datapoint[1] for datapoint in data if datapoint[2]==centroid_color_name]
-			plt.plot(centroid_cluster_points_x,centroid_cluster_points_y,centroid_color_name+"o")
+			plt.plot(centroid_cluster_points_x,centroid_cluster_points_y,centroid_color_name+"o",markeredgecolor='black')
 		#assign title to figure with iteration number
 		plt.title(""+str(counter))
 		#save figure
